@@ -1,0 +1,28 @@
+
+#Commands used to transform the habenula template images into our images space:
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_left.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/1_habenula_segmentation/hbseg_k000401.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_left_interp.nii.gz
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_right.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/1_habenula_segmentation/hbseg_k000401.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_right_interp.nii.gz
+ 
+
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_right.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/1_habenula_segmentation/hbseg_k000401.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_right_interp.nii.gz 
+
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_left.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/1_habenula_segmentation/hbseg_k000401.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_left_interp.nii.gz 
+
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_right.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/4_FinalHbROIs_ShapeOptimized_AfterTPsAverage/k0004/k0004_bilat_shape_optimized_Hb_ROI.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_right_2mminterp.nii.gz 
+
+flirt -in HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_left.nii.gz -ref HCP_OUTPUT/Habenula/outputs/Segmentation/4_FinalHbROIs_ShapeOptimized_AfterTPsAverage/k0004/k0004_bilat_shape_optimized_Hb_ROI.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0bin_left_2mminterp.nii.gz 
+
+
+flirt -in /nafs/narr/HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_right.nii.gz -ref /nafs/narr/HCP_OUTPUT/Habenula/outputs/Segmentation/2_FinalHbROIs_ShapeOptimized/k000401/k000401_bilat_shape_optimized_Hb_ROI.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out /nafs/narr/HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_right_2mminterp.nii.gz 
+
+flirt -in /nafs/narr/HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_left.nii.gz -ref /nafs/narr/HCP_OUTPUT/Habenula/outputs/Segmentation/2_FinalHbROIs_ShapeOptimized/k000401/k000401_bilat_shape_optimized_Hb_ROI.nii.gz  -applyxfm -usesqform -interp nearestneighbour -out /nafs/narr/HCP_OUTPUT/Habenula/code/Segmentation/habenula_template/habenula_template_HCP_50_native_thr0.25bin_left_2mminterp.nii.gz 
+
+
+
+
+
